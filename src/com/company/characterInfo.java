@@ -23,19 +23,23 @@ public class characterInfo {
 
     public static String getGender() {
         String weapon;
+        String weaponIntro = "The weapon that this hero specializes in is the: ";
         String description;
         String[] characterClass = {"Paladin","Knight","Demon Slayer","God","Grief Cleric"};
-        for (int i=0; i < characterClass.length; i++)
+        for (int i=0; i < characterClass.length;)//Solve infinite loop issue
             if (characterClass[0] == "Paladin"){
                 weapon = "Holy Blade";
                 description = "The bold paladin from the lands of Holy Terra stunts the growth of corruption where" +
                         "it is found and dashes it with the glory of it's deity";
-                System.out.println(weapon + " " +description );
+                System.out.println(weaponIntro + weapon);
+                System.out.println(description);
             }
             else if (characterClass[1] == "Knight"){
                 weapon = "Jaded Blade";
                 description ="The battle-strain and blood-stained knight of old dead-set on defending queen and country" +
                         "from does that may seek out it's heart";
+                System.out.println(weaponIntro + weapon);
+                System.out.println(description);
             }
         return gender;
     }
