@@ -24,7 +24,7 @@ public class Main {
         System.out.println("The sum of the equation is " + 959 / 20 +" and the modulus is " + 959 % 20);
         System.out.println(242+642+507+2967+498+209/6);
         System.out.println(characterInfo.getName());
-        System.out.println(characterInfo.getGender());
+        System.out.println(characterInfo.getCharacterSpecs());
 
 
     }
